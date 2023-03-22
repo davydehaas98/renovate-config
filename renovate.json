@@ -6,7 +6,6 @@
     "main",
   ],
   "timezone": "Europe/Amsterdam",
-  "schedule": ["0 6 * * *"],
   "packageRules": [
     "matchUpdateTypes": [ 
       "patch", "pin", "digest",
