@@ -5,6 +5,9 @@
   "baseBranches": [
     "main",
   ],
+  "schedule": [
+    "0 6 * * *"
+  ],
   "packageRules": [
     {
       "matchUpdateTypes": [ 
