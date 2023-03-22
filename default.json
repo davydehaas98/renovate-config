@@ -5,15 +5,14 @@
   "baseBranches": [
     "main",
   ],
-  "automergeSchedule": [
-    "0 0 6 * * *"
-  ],
   "packageRules": [
     {
       "matchUpdateTypes": [ 
         "patch", "pin", "digest",
       ],
       "automerge": true,
+      "automergeType": "branch",
+      "schedule": ["0 6 * * *"],
     }
   ],
   "dependencyDashboard": true,
