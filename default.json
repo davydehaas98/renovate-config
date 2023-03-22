@@ -1,21 +1,21 @@
 {
   "extends": [
-    "config:base",
+    "config:base"
   ],
   "baseBranches": [
-    "main",
+    "main"
   ],
   "timezone": "Europe/Amsterdam",
   "packageRules": [
     "matchUpdateTypes": [ 
-      "patch", "pin", "digest",
+      "patch", "pin", "digest"
     ],
-    "automerge": true,
+    "automerge": true
   ],
   "dependencyDashboard": true,
   "prConcurrentLimit": 20,
   "rebaseWhen": "behind-base-branch",
   "separateMinorPatch": true,
   "separateMajorMinor": true,
-  "separateMultipleMajor": true,
+  "separateMultipleMajor": true
 }
