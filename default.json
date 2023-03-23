@@ -3,7 +3,7 @@
     "config:base",
   ],
   "baseBranches": [
-    "main",
+    "develop",
   ],
   "automergeSchedule": [
     "after 3am and before 6am"
