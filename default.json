@@ -6,7 +6,7 @@
     "main",
   ],
   "automergeSchedule": [
-    "0 0 6 * * *"
+    "after 3am and before 6am"
   ],
   "packageRules": [
     {
