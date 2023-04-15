@@ -1,9 +1,10 @@
 {
   "extends": [
     "config:base",
+    ":gitSignOff"
   ],
   "baseBranches": [
-    "develop",
+    "develop"
   ],
   "automergeSchedule": [
     "after 3am and before 6am"
@@ -11,16 +12,21 @@
   "packageRules": [
     {
       "matchUpdateTypes": [ 
-        "patch", "pin", "digest",
+        "patch", "pin", "digest"
       ],
       "automerge": true,
-      "automergeType": "branch",
+      "automergeType": "pr"
     }
   ],
   "dependencyDashboard": true,
+  "prHourlyLimit": 0,
   "prConcurrentLimit": 20,
+  "branchConcurrentLimit": 20,
+  "bumpVersion": "patch",
   "rebaseWhen": "behind-base-branch",
+  "timezone": "UTC",
+  "configMigration": true,
   "separateMinorPatch": true,
   "separateMajorMinor": true,
-  "separateMultipleMajor": true,
+  "separateMultipleMajor": true
 }
