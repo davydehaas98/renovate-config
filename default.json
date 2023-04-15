@@ -7,7 +7,7 @@
     "develop"
   ],
   "automergeSchedule": [
-    "after 3am and before 6am"
+    "after 1am and before 4am"
   ],
   "packageRules": [
     {
