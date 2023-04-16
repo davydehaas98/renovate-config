@@ -5,8 +5,7 @@
   "packageRules": [
     {
       "matchUpdateTypes": ["patch", "pin", "digest"],
-      "matchPackagePatterns": ["*"],
-      "excludePackagePatterns": ["linuxserver"],
+      "excludePackagePrefixes": ["linuxserver"],
       "automerge": true,
       "automergeType": "pr",
     }
