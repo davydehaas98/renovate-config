@@ -5,13 +5,9 @@
   "packageRules": [
     {
       "matchUpdateTypes": ["patch", "pin", "digest"],
+      "excludePackagePatterns": ["linuxserver/"],
       "automerge": true,
       "automergeType": "pr",
-    },
-    {
-      "matchPackagePatterns": ["linuxserver"],
-      "matchManagers": ["docker-compose"],
-      "automerge": false
     }
   ],
   "branchConcurrentLimit": 20,
