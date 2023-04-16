@@ -5,9 +5,12 @@
   "packageRules": [
     {
       "matchUpdateTypes": ["patch", "pin", "digest"],
-      "excludePackagePrefixes": ["linuxserver"],
       "automerge": true,
-      "automergeType": "pr",
+      "automergeType": "pr"
+    },
+    {
+      "matchPackagePrefixes": ["linuxserver"],
+      "automerge": false
     }
   ],
   "branchConcurrentLimit": 20,
