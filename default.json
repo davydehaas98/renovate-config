@@ -8,10 +8,6 @@
       "automerge": true,
       "automergeType": "pr"
     },
-    {
-      "matchPackagePrefixes": ["linuxserver"],
-      "automerge": false
-    }
   ],
   "branchConcurrentLimit": 20,
   "prConcurrentLimit": 20,
