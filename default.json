@@ -1,32 +1,28 @@
 {
-  "extends": [
-    "config:base",
-    ":gitSignOff"
-  ],
-  "baseBranches": [
-    "develop"
-  ],
-  "automergeSchedule": [
-    "after 1am and before 4am"
-  ],
+  "extends": ["config:base", ":gitSignOff"],
+  "baseBranches": ["develop"],
+  "automergeSchedule": ["before 4am"],
   "packageRules": [
     {
-      "matchUpdateTypes": [ 
-        "patch", "pin", "digest"
-      ],
+      "matchUpdateTypes": ["patch", "pin", "digest"],
       "automerge": true,
-      "automergeType": "pr"
+      "automergeType": "pr",
+    },
+    {
+      "matchPackagePatterns": ["linuxserver"],
+      "matchManagers": ["docker-compose"],
+      "enabled": false
     }
   ],
-  "dependencyDashboard": true,
-  "prHourlyLimit": 0,
-  "prConcurrentLimit": 20,
   "branchConcurrentLimit": 20,
-  "bumpVersion": "patch",
+  "prConcurrentLimit": 20,
+  "prHourlyLimit": 0,
   "rebaseWhen": "behind-base-branch",
-  "timezone": "UTC",
-  "configMigration": true,
   "separateMinorPatch": true,
   "separateMajorMinor": true,
-  "separateMultipleMajor": true
+  "separateMultipleMajor": true,
+  "bumpVersion": "patch",
+  "configMigration": true,
+  "dependencyDashboard": true,
+  "timezone": "UTC"
 }
