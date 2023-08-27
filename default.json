@@ -1,15 +1,25 @@
 {
-  "extends": ["config:base", ":gitSignOff"],
-  "baseBranches": ["develop"],
-  "automergeSchedule": ["before 4am"],
+  "extends": [
+    "config:base", ":gitSignOff"
+  ],
+  "baseBranches": [
+    "develop"
+  ],
+  "automergeSchedule": [
+    "before 4am"
+  ],
   "packageRules": [
     {
-      "matchUpdateTypes": ["patch", "pin", "digest"],
+      "matchUpdateTypes": [
+        "patch", "pin", "digest"
+      ],
       "automerge": false,
       "automergeType": "pr"
     },
     {
-      "matchPackagePrefixes": ["linuxserver"],
+      "matchPackagePrefixes": [
+        "linuxserver"
+      ],
       "automerge": false
     }
   ],
