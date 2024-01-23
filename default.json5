@@ -1,6 +1,7 @@
 {
   "extends": [
-    "config:base", ":gitSignOff"
+    "config:base", 
+    ":gitSignOff",
   ],
   "baseBranches": ["develop"],
   "automergeSchedule": ["before 4am"],
@@ -9,36 +10,39 @@
     {
       "matchUpdateTypes": ["patch", "pin", "digest"],
       "automerge": false,
-      "automergeType": "pr"
+      "automergeType": "pr",
     },
     {
       "matchPackageNames": ["renovate"],
       "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true,
+      "automergeType": "branch",
       "schedule": ["before 4am"],
-      "automerge": true
-    }
+    },
   ],
   "lockFileMaintenance": { 
     "enabled": true,
-    "schedule": ["before 4am on monday"]
+    "schedule": ["before 4am on monday"],
+  },
+  "vulnerabilityAlerts": {
+    "enabled": true,
+    "labels": ["security"],
   },
   "assignees": ["davydehaas98"],
-  "assigneesFromCodeOwners": true,
+  "assigneesFromCodeOwners": false,
   "branchConcurrentLimit": 20,
   "bumpVersion": "patch",
   "configMigration": true,
   "dependencyDashboard": true,
-  "dependencyDashboardOSVVulnerabilitySummary": true,
-  "osvVulnerabilityAlerts": true,
   "prConcurrentLimit": 20,
   "prHourlyLimit": 0,
   "prImmediately": true,
   "rebaseStalePrs": true,
   "rebaseWhen": "behind-base-branch",
   "reviewers": ["davydehaas98"],
-  "reviewersFromCodeOwners": true,
+  "reviewersFromCodeOwners": false,
   "separateMinorPatch": true,
   "separateMajorMinor": true,
   "separateMultipleMajor": true,
-  "timezone": "UTC"
+  "timezone": "UTC",
 }
