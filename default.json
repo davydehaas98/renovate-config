@@ -2,12 +2,8 @@
   "extends": [
     "config:base", ":gitSignOff"
   ],
-  "baseBranches": [
-    "develop"
-  ],
-  "automergeSchedule": [
-    "before 4am"
-  ],
+  "baseBranches": ["develop"],
+  "automergeSchedule": ["before 4am"],
   "labels": ["dependencies", "renovate"],
   "packageRules": [
     {
@@ -18,13 +14,13 @@
     {
       "matchPackageNames": ["renovate"],
       "matchUpdateTypes": ["minor", "patch"],
-      "schedule": "before 4am",
+      "schedule": ["before 4am"],
       "automerge": true
     }
   ],
   "lockFileMaintenance": { 
-    "enabled": true
-    "schedule": ["before 4am on monday"],
+    "enabled": true,
+    "schedule": ["before 4am on monday"]
   },
   "assignees": ["davydehaas98"],
   "assigneesFromCodeOwners": true,
