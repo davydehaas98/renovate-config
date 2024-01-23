@@ -8,24 +8,41 @@
   "automergeSchedule": [
     "before 4am"
   ],
+  "labels": ["dependencies", "renovate"],
   "packageRules": [
     {
-      "matchUpdateTypes": [
-        "patch", "pin", "digest"
-      ],
+      "matchUpdateTypes": ["patch", "pin", "digest"],
       "automerge": false,
       "automergeType": "pr"
+    },
+    {
+      "matchPackageNames": ["renovate"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "schedule": "before 4am",
+      "automerge": true
     }
   ],
+  "lockFileMaintenance": { 
+    "enabled": true
+    "schedule": ["before 4am on monday"],
+  },
+  "assignees": ["davydehaas98"],
+  "assigneesFromCodeOwners": true,
   "branchConcurrentLimit": 20,
-  "prConcurrentLimit": 20,
-  "prHourlyLimit": 0,
-  "rebaseWhen": "behind-base-branch",
-  "separateMinorPatch": true,
-  "separateMajorMinor": true,
-  "separateMultipleMajor": true,
   "bumpVersion": "patch",
   "configMigration": true,
   "dependencyDashboard": true,
+  "dependencyDashboardOSVVulnerabilitySummary": true,
+  "osvVulnerabilityAlerts": true,
+  "prConcurrentLimit": 20,
+  "prHourlyLimit": 0,
+  "prImmediately": true,
+  "rebaseStalePrs": true,
+  "rebaseWhen": "behind-base-branch",
+  "reviewers": ["davydehaas98"],
+  "reviewersFromCodeOwners": true,
+  "separateMinorPatch": true,
+  "separateMajorMinor": true,
+  "separateMultipleMajor": true,
   "timezone": "UTC"
 }
