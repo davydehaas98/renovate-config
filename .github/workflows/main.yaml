@@ -10,4 +10,4 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4.1.1
       - name: Validate config
-        run: jq type default.json
+        run: jq type /default.json
