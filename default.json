@@ -36,7 +36,7 @@
   "dependencyDashboard": true,
   "prConcurrentLimit": 20,
   "prHourlyLimit": 0,
-  "prImmediately": true,
+  "prCreation": "immediate",
   "rebaseStalePrs": true,
   "rebaseWhen": "behind-base-branch",
   "reviewers": ["davydehaas98"],
