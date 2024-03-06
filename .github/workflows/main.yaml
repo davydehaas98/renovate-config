@@ -1,8 +1,6 @@
 name: Renovate
 on:
-  push:
-    branches:
-      - main
+  push
 jobs:
   validate:
     runs-on: ubuntu-22.04
