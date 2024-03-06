@@ -38,7 +38,6 @@
   "prConcurrentLimit": 20,
   "prHourlyLimit": 0,
   "prCreation": "immediate",
-  "rebaseStalePrs": true,
   "rebaseWhen": "behind-base-branch",
   "reviewers": ["davydehaas98"],
   "reviewersFromCodeOwners": false,
