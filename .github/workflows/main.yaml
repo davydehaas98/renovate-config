@@ -9,5 +9,5 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4.1.1
-      - name: Validate config
-        run: npx --yes --package renovate -- renovate-config-validator
+      - name: Validate
+        run: npx --yes --package renovate -- renovate-config-validator --strict default.json
