@@ -9,4 +9,4 @@ jobs:
         uses: actions/checkout@v4.1.1
       - name: Validate
         run: npx --yes --package renovate -- \
-          renovate-config-validator --strict default.json
+          renovate-config-validator --strict default.json5
