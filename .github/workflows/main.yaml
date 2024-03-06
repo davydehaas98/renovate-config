@@ -1,13 +1,13 @@
-name: main
+name: Renovate
 on:
   push:
     branches:
       - main
 jobs:
-  renovate:
+  validate:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout
         uses: actions/checkout@v4.1.1
       - name: Validate config
-        run: jq type /default.json
+        run: npx --yes --package renovate -- renovate-config-validator
