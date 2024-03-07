@@ -25,6 +25,8 @@
   "separateMultipleMajor": true,
   "configMigration": true,
   "commitMessageExtra": "to {{#if isMajor}}v{{{newMajor}}}{{else}}{{#if isSingleVersion}}v{{{toVersion}}}{{else}}{{{newValue}}}{{/if}}{{/if}} (from {{fromVersion}})",
+  "dependencyDashboardLabels": ["renovate"],
+  "dependencyDashboardOSVVulnerabilitySummary": "all",
   
   "packageRules": [
     {
