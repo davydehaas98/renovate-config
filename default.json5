@@ -3,6 +3,7 @@
   
   "extends": [
     "config:best-practices",
+    "mergeConfidence:all-badges",
     ":assignAndReview(davydehaas98)",
     ":dependencyDashboard",
     ":enableVulnerabilityAlertsWithLabel(security)",
@@ -23,6 +24,7 @@
   "separateMajorMinor": true,
   "separateMultipleMajor": true,
   "configMigration": true,
+  "commitMessageExtra": "to {{#if isMajor}}v{{{newMajor}}}{{else}}{{#if isSingleVersion}}v{{{toVersion}}}{{else}}{{{newValue}}}{{/if}}{{/if}} (from {{fromVersion}})"
   
   "packageRules": [
     {
