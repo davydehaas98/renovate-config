@@ -11,7 +11,7 @@
     ":labels(dependencies,renovate)",
     ":maintainLockFilesWeekly",
     ":prConcurrentLimit20",
-    ":prHourlyLimit4",
+    ":prHourlyLimitNone",
     ":prImmediately",
     ":rebaseStalePrs",
     ":separateMultipleMajorReleases",
