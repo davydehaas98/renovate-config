@@ -28,7 +28,7 @@
   "separateMultipleMajor": true,
   "configMigration": true,
   "commitMessageAction": "Update",
-  "commitMessageTopic": "{{depName}}"
+  "commitMessageTopic": "{{depName}}",
   "commitMessageExtra": "from {{currentVersion}} to {{newVersion}}",
   "dependencyDashboardLabels": ["renovate"],
   "dependencyDashboardOSVVulnerabilitySummary": "all",
