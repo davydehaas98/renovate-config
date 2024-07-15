@@ -3,6 +3,8 @@
   
   "extends": [
     "config:best-practices",
+    "docker:enableMajor",
+    "docker:pinDigests",
     "mergeConfidence:all-badges",
     ":assignee(davydehaas98)",
     ":reviewer()",
@@ -25,6 +27,8 @@
   "separateMajorMinor": true,
   "separateMultipleMajor": true,
   "configMigration": true,
+  "commitMessageAction": "Update",
+  "commitMessageTopic": "{{depName}}"
   "commitMessageExtra": "from {{currentVersion}} to {{newVersion}}",
   "dependencyDashboardLabels": ["renovate"],
   "dependencyDashboardOSVVulnerabilitySummary": "all",
