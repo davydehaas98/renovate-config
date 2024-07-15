@@ -8,8 +8,11 @@ metadata:
     sonarqube.org/project-key: renovate-config
   tags:
     - renovate
+  links:
+    - url: https://github.com/davydehaas98/renovate-config
+      title: GitHub Renovate config
 spec:
-  type: library
+  type: bot
   lifecycle: production
   owner: default
   system: default
