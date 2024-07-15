@@ -16,4 +16,4 @@ jobs:
       - name: Install renovate
         run: npm install renovate@37.430.0
       - name: Validate renovate.json
-        run: renovate renovate-config-validator --strict default.json5
+        run: npx renovate-config-validator --strict default.json5
