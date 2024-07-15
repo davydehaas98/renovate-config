@@ -24,7 +24,7 @@
   "separateMajorMinor": true,
   "separateMultipleMajor": true,
   "configMigration": true,
-  "commitMessageExtra": "to {{newVersion}} (from {{currentVersion}})",
+  "commitMessageExtra": "from {{currentVersion}} to {{newVersion}}",
   "dependencyDashboardLabels": ["renovate"],
   "dependencyDashboardOSVVulnerabilitySummary": "all",
 }
