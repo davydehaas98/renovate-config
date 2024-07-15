@@ -13,5 +13,7 @@ jobs:
         uses: actions/setup-node@1e60f620b9541d16bece96c5465dc8ee9832be0b # v4.0.3
         with:
           node-version: 22
+      - name: Install renovate
+        run: npm install renovate@37.430.0
       - name: Validate renovate.json
-        run: npm --yes --package renovate -- renovate-config-validator --strict default.json5
+        run: renovate-config-validator --strict default.json5
