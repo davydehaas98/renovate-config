@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: renovate-config
+  namespace: davydehaas98
+  title: Renovate config
+  annotations:
+    sonarqube.org/project-key: renovate-config
+  tags:
+    - renovate
+spec:
+  type: library
+  lifecycle: production
+  owner: default
+  system: default
