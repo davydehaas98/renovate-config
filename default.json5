@@ -4,7 +4,8 @@
   "extends": [
     "config:best-practices",
     "mergeConfidence:all-badges",
-    ":assignAndReview(davydehaas98)",
+    ":assignee(davydehaas98)",
+    ":reviewer()",
     ":dependencyDashboard",
     ":enableVulnerabilityAlertsWithLabel(security)",
     ":gitSignOff",
