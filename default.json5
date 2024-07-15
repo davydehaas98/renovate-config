@@ -13,7 +13,7 @@
     ":gitSignOff",
     ":labels(dependencies,renovate)",
     ":maintainLockFilesWeekly",
-    ":prConcurrentLimit20",
+    // ":prConcurrentLimit20",
     ":prHourlyLimitNone",
     ":prImmediately",
     ":rebaseStalePrs",
