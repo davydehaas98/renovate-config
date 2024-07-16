@@ -7,6 +7,7 @@
     "docker:pinDigests",
     "helpers:pinGitHubActionDigests",
     "mergeConfidence:all-badges",
+    "workarounds:bitnamiDockerImageVersioning",
     ":assignee(davydehaas98)",
     ":dependencyDashboard",
     ":enableVulnerabilityAlertsWithLabel(security)",
