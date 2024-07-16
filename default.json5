@@ -1,41 +1,38 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  
+
   "extends": [
-    "config:best-practices",
+    "config:recommended",
     "docker:enableMajor",
     "docker:pinDigests",
+    "helpers:pinGitHubActionDigests",
     "mergeConfidence:all-badges",
     ":assignee(davydehaas98)",
-    ":reviewer()",
     ":dependencyDashboard",
     ":enableVulnerabilityAlertsWithLabel(security)",
     ":gitSignOff",
     ":labels(dependencies,renovate)",
     ":maintainLockFilesWeekly",
-    ":prConcurrentLimitNone",
-    ":prHourlyLimitNone",
+    ":pinDevDependencies",
     ":prImmediately",
     ":rebaseStalePrs",
     ":separateMultipleMajorReleases",
     ":timezone(UTC)",
   ],
-  
   "baseBranches": ["develop"],
   "bumpVersion": "patch",
   "separateMinorPatch": true,
   "separateMajorMinor": true,
   "separateMultipleMajor": true,
-  "configMigration": true,
-  "commitMessageAction": "Update",
+  // Commit message
   "commitMessageTopic": "{{depName}}",
   "commitMessageExtra": "from {{currentVersion}} to {{newVersion}}",
-  "packageRules": [
-    {
-      "matchDatasources": ["docker"],
-      "commitMessageExtra": "from {{fromVersion}} to {{toVersion}}"
-    }
-  ],
+  // Limits
+  "branchConcurrentLimit": 0,
+  "prConcurrentLimit": 0,
+  "prHourlyLimit": 0,
+  // Others
+  "configMigration": true,
   "dependencyDashboardLabels": ["renovate"],
   "dependencyDashboardOSVVulnerabilitySummary": "all",
 }
