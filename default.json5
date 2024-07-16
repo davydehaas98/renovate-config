@@ -30,6 +30,12 @@
   "commitMessageAction": "Update",
   "commitMessageTopic": "{{depName}}",
   "commitMessageExtra": "from {{currentVersion}} to {{newVersion}}",
+  "packageRules": [
+    {
+      "matchDatasources": ["docker"],
+      "commitMessageExtra": "from {{fromVersion}} to {{toVersion}}"
+    }
+  ],
   "dependencyDashboardLabels": ["renovate"],
   "dependencyDashboardOSVVulnerabilitySummary": "all",
 }
