@@ -16,6 +16,7 @@
     ":pinDevDependencies",
     ":prImmediately",
     ":rebaseStalePrs",
+    ":semanticCommits",
     ":separateMultipleMajorReleases",
     ":timezone(UTC)",
   ],
