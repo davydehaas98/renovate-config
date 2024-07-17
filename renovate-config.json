@@ -3,5 +3,8 @@
   "autodiscoverFilter": "davydehaas98/*",
   "gitAuthor": "Renovate Bot <bot@renovateapp.com>",
   "platform": "github",
+  "repositories": [
+    "davydehaas98/home-server"
+  ],
   "username": "renovate-bot-davydehaas98"
 }
