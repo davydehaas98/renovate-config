@@ -13,7 +13,7 @@ jobs:
         with:
           private-key: ${{ secrets.PRIVATE_KEY }}
           app-id: ${{ secrets.APP_ID}}
-          # owner: ${{ github.repository_owner }}
+          owner: ${{ github.repository_owner }}
       - name: Checkout
         uses: actions/checkout@v4.1.7
       - name: Self-hosted Renovate
@@ -21,4 +21,3 @@ jobs:
         with:
           configurationFile: renovate-config.json
           token: '${{ steps.get_token.outputs.token }}'
-  
