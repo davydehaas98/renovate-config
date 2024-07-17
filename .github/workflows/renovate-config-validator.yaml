@@ -1,10 +1,10 @@
-name: Renovate
+name: Renovate Config Validator
 on:
   push:
     branches:
       - main
 jobs:
-  validate:
+  renovate-config-validator:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
