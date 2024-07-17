@@ -11,8 +11,8 @@ jobs:
         id: get_token
         uses: actions/create-github-app-token@v1.0.0
         with:
-          private-key: ${{ secrets.private_key }}
-          app-id: renovate-bot-davydehaas98
+          private-key: ${{ secrets.PRIVATE_KEY }}
+          app-id: ${{ secrets.APP_ID}}
           # owner: ${{ github.repository_owner }}
       - name: Checkout
         uses: actions/checkout@v4.1.7
