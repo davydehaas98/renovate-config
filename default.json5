@@ -28,7 +28,7 @@
   "separateMultipleMajor": true,
   // Commit message
   "commitMessageTopic": "{{depName}}",
-  "commitMessageExtra": "{{from {{currentVersion}} to {{newVersion}}",
+  "commitMessageExtra": "from {{currentVersion}} to {{newVersion}}",
   // Limits
   "branchConcurrentLimit": 0,
   "prConcurrentLimit": 0,
