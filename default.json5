@@ -28,7 +28,7 @@
   "separateMultipleMajor": true,
   // Commit message
   "commitMessageTopic": "{{depName}}",
-  "commitMessageExtra": "from {{currentVersion}} to {{newVersion}}",
+  "commitMessageExtra": "{{from {{currentVersion}} to {{newVersion}}",
   // Limits
   "branchConcurrentLimit": 0,
   "prConcurrentLimit": 0,
@@ -37,4 +37,15 @@
   "configMigration": true,
   "dependencyDashboardLabels": ["renovate"],
   "dependencyDashboardOSVVulnerabilitySummary": "all",
+  // Labels
+  "packageRules": [
+    {
+      "datasources":["docker"],
+      "addLabels": ["docker"]
+    },
+    {
+      "datasources":["helm"],
+      "addLabels": ["helm"]
+    }
+  ]
 }
