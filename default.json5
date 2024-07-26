@@ -40,11 +40,11 @@
   // Labels
   "packageRules": [
     {
-      "datasources":["docker"],
+      "datasources": ["docker"],
       "addLabels": ["docker"]
     },
     {
-      "datasources":["helm"],
+      "datasources": ["helm"],
       "addLabels": ["helm"]
     }
   ]
