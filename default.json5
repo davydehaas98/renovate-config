@@ -41,23 +41,23 @@
   "packageRules": [
     {
       "matchUpdateTypes": ["major"],
-      "labels": ["major"]
+      "addLabels": ["major"]
     },
     {
       "matchUpdateTypes": ["minor"],
-      "labels": ["minor"]
+      "addLabels": ["minor"]
     },
     {
       "matchUpdateTypes": ["patch"],
-      "labels": ["patch"]
+      "addLabels": ["patch"]
     },
     {
       "matchUpdateTypes": ["digest"],
-      "labels": ["digest"]
+      "addLabels": ["digest"]
     },
     {
       "matchUpdateTypes": ["pin"],
-      "labels": ["pin"]
+      "addLabels": ["pin"]
     },
     {
       "datasources": ["docker"],
