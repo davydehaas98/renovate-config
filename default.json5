@@ -60,11 +60,11 @@
       "addLabels": ["pin"]
     },
     {
-      "datasources": ["docker"],
+      "matchDatasources": ["docker"],
       "addLabels": ["docker"]
     },
     {
-      "datasources": ["helm"],
+      "matchDatasources": ["helm"],
       "addLabels": ["helm"]
     }
   ]
