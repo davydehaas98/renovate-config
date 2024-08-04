@@ -14,6 +14,6 @@ jobs:
         with:
           node-version: 22
       - name: Install renovate
-        run: npm install renovate@37.430.0
+        run: npm install renovate@38
       - name: Validate renovate.json
         run: npx renovate-config-validator --strict default.json5
