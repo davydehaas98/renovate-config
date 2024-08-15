@@ -72,6 +72,10 @@
     {
       "matchDatasources": ["helm"],
       "addLabels": ["helm"]
-    }
+    },
+    {
+      "matchDatasources": ["npm"],
+      "addLabels": ["npm"]
+    },
   ]
 }
