@@ -41,7 +41,7 @@
   "configMigration": true,
   "dependencyDashboardLabels": ["renovate"],
   "dependencyDashboardOSVVulnerabilitySummary": "all",
-  "osvVulnerabilityAlerts": true
+  "osvVulnerabilityAlerts": true,
 
   // Labels
   "packageRules": [
