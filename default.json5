@@ -21,22 +21,28 @@
     ":separateMultipleMajorReleases",
     ":timezone(UTC)",
   ],
+
   "baseBranches": ["develop"],
   "bumpVersion": "patch",
   "separateMinorPatch": true,
   "separateMajorMinor": true,
   "separateMultipleMajor": true,
+
   // Commit message
   "commitMessageTopic": "{{depName}}",
   "commitMessageExtra": "from {{currentVersion}} to {{newVersion}}",
+
   // Limits
   "branchConcurrentLimit": 0,
   "prConcurrentLimit": 0,
   "prHourlyLimit": 0,
+
   // Others
   "configMigration": true,
   "dependencyDashboardLabels": ["renovate"],
   "dependencyDashboardOSVVulnerabilitySummary": "all",
+  "osvVulnerabilityAlerts": true
+
   // Labels
   "packageRules": [
     // Update types
