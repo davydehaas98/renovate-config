@@ -13,7 +13,6 @@
     ":enableVulnerabilityAlertsWithLabel(security)",
     ":gitSignOff",
     ":labels(dependencies,renovate)",
-    ":maintainLockFilesWeekly",
     ":pinDevDependencies",
     ":prImmediately",
     ":rebaseStalePrs",
