@@ -69,6 +69,7 @@
       "matchUpdateTypes": ["lockFileMaintenance"],
       "addLabels": ["lockFileMaintenance"]
     },
+
     // Datasources
     {
       "matchDatasources": ["docker"],
@@ -81,6 +82,13 @@
     {
       "matchDatasources": ["npm"],
       "addLabels": ["npm"]
+    },
+    {
+      "matchDatasources": [
+        "terraform-module", 
+        "terraform-provider"
+      ],
+      "addLabels": ["terraform"]
     },
   ]
 }
