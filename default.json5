@@ -22,7 +22,6 @@
   ],
 
   "baseBranches": ["develop"],
-  "bumpVersion": "patch",
   "separateMinorPatch": true,
   "separateMajorMinor": true,
   "separateMultipleMajor": true,
@@ -42,7 +41,7 @@
   "dependencyDashboardOSVVulnerabilitySummary": "all",
   "osvVulnerabilityAlerts": true,
 
-  // Labels
+  // Package Rules
   "packageRules": [
     // Update types
     {
@@ -77,11 +76,17 @@
     },
     {
       "matchDatasources": ["helm"],
-      "addLabels": ["helm"]
+      "addLabels": ["helm"],
+      "bumpVersion": "patch"
     },
     {
       "matchDatasources": ["npm"],
-      "addLabels": ["npm"]
+      "addLabels": ["npm"],
+      "bumpVersion": "patch"
+    },
+    {
+      "matchDatasources": ["maven"],
+      "addLabels": ["maven"]
     },
     {
       "matchDatasources": [
