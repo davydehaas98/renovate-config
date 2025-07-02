@@ -74,6 +74,7 @@
       "matchPackageNames": ["*"],
       "abandonmentThreshold": "1 year"
     },
+
     // Docker
     {
       "matchDatasources": ["docker"],
