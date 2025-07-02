@@ -43,6 +43,8 @@
 
   // Package Rules
   "packageRules": [
+    "abandonmentThreshold": "1 year"
+
     // Update types
     {
       "matchUpdateTypes": ["major"],
@@ -70,11 +72,6 @@
     },
 
     // Datasources
-    {
-      "matchPackageNames": ["*"],
-      "abandonmentThreshold": "1 year"
-    },
-
     // Docker
     {
       "matchDatasources": ["docker"],
