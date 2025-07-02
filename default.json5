@@ -43,7 +43,8 @@
 
   // Package Rules
   "packageRules": [
-    "abandonmentThreshold": "1 year"
+    // Default
+    "abandonmentThreshold": "1 year",
 
     // Update types
     {
