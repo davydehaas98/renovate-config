@@ -8,7 +8,6 @@
     "helpers:pinGitHubActionDigests",
     "mergeConfidence:all-badges",
     "workarounds:bitnamiDockerImageVersioning",
-    ":reviewer(davydehaas98)",
     ":dependencyDashboard",
     ":enableVulnerabilityAlertsWithLabel(security)",
     ":gitSignOff",
@@ -16,6 +15,7 @@
     ":pinDevDependencies",
     ":prImmediately",
     ":rebaseStalePrs",
+    ":reviewer(davydehaas98)",
     ":semanticCommits",
     ":separateMultipleMajorReleases",
     ":timezone(UTC)",
@@ -71,23 +71,47 @@
 
     // Datasources
     {
+      "matchPackageNames": ["*"],
+      "abandonmentThreshold": "1 year"
+    },
+    // Docker
+    {
       "matchDatasources": ["docker"],
       "addLabels": ["docker"]
     },
+
+    // Helm
     {
       "matchDatasources": ["helm"],
       "addLabels": ["helm"],
       "bumpVersion": "patch"
     },
-    {
-      "matchDatasources": ["npm"],
-      "addLabels": ["npm"],
-      "bumpVersion": "patch"
-    },
+
+    // Maven
     {
       "matchDatasources": ["maven"],
       "addLabels": ["maven"]
     },
+
+    // NPM
+    {
+      "matchDatasources": ["npm"],
+      "addLabels": ["npm"],
+      "bumpVersion": "patch",
+      "abandonmentThreshold": "1 year"
+    },
+    {
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@types/*"],
+      "abandonmentThreshold": null
+    },
+    {
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["lodash"],
+      "abandonmentThreshold": "6 years"
+    },
+
+    // Terraform
     {
       "matchDatasources": [
         "terraform-module", 
