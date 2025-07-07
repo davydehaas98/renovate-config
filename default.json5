@@ -4,8 +4,8 @@
   "extends": [
     "config:recommended",
     "docker:enableMajor",
-    "docker:pinDigests",
-    "helpers:pinGitHubActionDigests",
+    //"docker:pinDigests",
+    //"helpers:pinGitHubActionDigests",
     "mergeConfidence:all-badges",
     "workarounds:bitnamiDockerImageVersioning",
     ":dependencyDashboard",
