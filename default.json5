@@ -92,19 +92,7 @@
     // NPM
     {
       "matchDatasources": ["npm"],
-      "addLabels": ["npm"],
-      "bumpVersion": "patch",
-      "abandonmentThreshold": "1 year"
-    },
-    {
-      "matchDatasources": ["npm"],
-      "matchPackageNames": ["@types/*"],
-      "abandonmentThreshold": null
-    },
-    {
-      "matchDatasources": ["npm"],
-      "matchPackageNames": ["lodash"],
-      "abandonmentThreshold": "6 years"
+      "addLabels": ["npm"]
     },
 
     // Terraform
