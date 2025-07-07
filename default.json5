@@ -43,9 +43,6 @@
 
   // Package Rules
   "packageRules": [
-    // Default
-    "abandonmentThreshold": "1 year",
-
     // Update types
     {
       "matchUpdateTypes": ["major"],
