@@ -3,7 +3,7 @@
   "extends": [
     "local>davydehaas98/renovate-config"
   ],
-  "baseBranches": [
+  "baseBranchPatterns": [
     "main"
   ]
 }
