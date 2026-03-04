@@ -3,17 +3,22 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
+
 jobs:
   renovate-config-validator:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
         uses: actions/checkout@v6.0.2
+
       - name: Setup Node
         uses: actions/setup-node@v6.3.0
         with:
           node-version: 24
+
       - name: Install renovate
         run: npm install renovate
+
       - name: Validate renovate.json
         run: npx renovate-config-validator --strict default.json5
