@@ -21,7 +21,7 @@
     ":timezone(UTC)",
   ],
 
-  "baseBranches": ["develop"],
+  "baseBranchPatterns": ["develop"],
   "separateMinorPatch": true,
   "separateMajorMinor": true,
   "separateMultipleMajor": true,
