@@ -24,6 +24,7 @@
   "baseBranchPatterns": ["develop"],
   "separateMinorPatch": true,
   "separateMajorMinor": true,
+  "separateMultipleMinor": true,
   "separateMultipleMajor": true,
 
   // Commit message
